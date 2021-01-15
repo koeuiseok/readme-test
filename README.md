@@ -4,6 +4,12 @@
 
 
 ## Supported Devices:
+|Device         |Model                              |Interface|Details                                 |
+|----------     |-----------------------------      |---      |----------------------------------------|
+|LCD            |Adnet LCD                          |I2C      |ASM2 Board
+|EEPROM         |AT24CM01, AT24CM02                 |I2C      |         
+|SPI FLASH      |n25q128a13m, mx25l12805d, gd25q128 |SPI      |fatfilesystem, littlefilesystem, mtd
+|KSE(SmartCard) |KSE2.1, KSE2.0                     |ISO7816  |keypair_21, keypair_20
 
 
 ## Installing and Setup:
@@ -30,8 +36,10 @@ When compiling ends, upload binary file on board. (example uses M2351 board)
 ```
 cd dorsalstream/dist
 ./axtool.exe -t nu_maker -f2 ../applications/helloworld.freertos/bin/Numaker_PFM_M2351/helloworld.freertos.bin <COMnum> 
-# read README and change COMnum like COM1, COM2 etc..
+# read README and change COMnum to yours like COM1, COM2 etc..
 ```
+With the output command "reset the board", press reset button on board and connect to serial.
+
 
 
 
