@@ -21,7 +21,12 @@ git clone <repository name>
 * Verify the installation by "arm-none-eabi-gcc --version" command
 * Modify the path of TOOLCAHIN_PREFIX in **dorsalstream/scripts/ARM_EABI_TOOLCHAIN.mk** 
 * Also modify arm-none-eabi-gcc path in **dorsalstream/scripts/Makefile** 
-
+```
+dorsalstream/
+  scripts/
+    Makefile
+    ARM_EABI_TOOLCHAIN.mk
+```
 
 ## Run applications
 * shell 1
@@ -31,6 +36,13 @@ make
 ```
 If you run "make" command, complier starts compiling. 
 When compiling ends, upload binary file on board. (example uses M2351 board)
+Output file comes out here, bin folder.
+```
+dorsalstream/
+  applications/
+    helloworld.freertos/
+      bin
+```
 
 * shell 2
 ```
