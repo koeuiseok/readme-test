@@ -55,7 +55,7 @@ With the output command "reset the board", press reset button on board and conne
 
 ### Header file include errors
 If you see errors in including header files, please change the path.
-For example, #include "at.h" -> "<path>/include/at.h" etc..
+For example, #include "at.h" -> "\<path\>/include/at.h" etc..
 ```
 dorsalstream/
   drivers/
