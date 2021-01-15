@@ -11,7 +11,7 @@
 |SPI FLASH      |n25q128a13m, mx25l12805d, gd25q128 |SPI      |fatfilesystem, littlefilesystem, mtd
 |KSE(SmartCard) |KSE2.1, KSE2.0                     |ISO7816  |keypair_21, keypair_20
 
-
+<br>
 ## Installing and Setup:
 ```
 git clone <repository name>
@@ -27,7 +27,7 @@ dorsalstream/
     Makefile
     ARM_EABI_TOOLCHAIN.mk
 ```
-
+<br>
 ## Run applications
 * shell 1
 ```
