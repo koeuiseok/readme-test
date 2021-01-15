@@ -28,7 +28,7 @@ dorsalstream/
     ARM_EABI_TOOLCHAIN.mk
 ```  
 
-## Run applications
+## Run applications:
 * **shell 1**
 ```
 cd dorsalstream/applications/helloworldfreertos
@@ -54,7 +54,7 @@ cd dorsalstream/dist
 With the output command "reset the board", press reset button on board and connect to serial.  
 
 
-### Header file include errors
+### Header file include errors:
 If you see errors in including header files, please change the path.
 For example, `#include "at.h" -> "\<path\>/include/at.h"` etc..
 ```
