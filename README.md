@@ -12,7 +12,7 @@
 |KSE(SmartCard) |KSE2.1, KSE2.0                     |ISO7816  |keypair_21, keypair_20  
 
 
-## Installing and Setup:
+## Install & Setup:
 ```
 git clone <repository name>
 ```
@@ -51,7 +51,8 @@ cd dorsalstream/dist
 ./axtool.exe -t nu_maker -f2 ../applications/helloworld.freertos/bin/Numaker_PFM_M2351/helloworld.freertos.bin <COMnum> 
 # read README and change COMnum to yours like COM1, COM2 etc..
 ```
-With the output command "reset the board", press reset button on board and connect to serial.  
+With the output command "reset the board", press reset button on board.
+For serial COM connection, use serial communication terminal program like PuTTY. Can download [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
 
 ### Header file include errors:
