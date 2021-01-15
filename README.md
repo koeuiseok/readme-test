@@ -18,7 +18,7 @@ git clone <repository name>
 ```
 * Download Arm Embedded Toolchain [here](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
 * Follow the README instructions to install arm-none-eabi-gcc in **gcc-arm-none-eabi/share/doc/gcc-arm-none-eabi/readme**
-* Verify the installation by "arm-none-eabi-gcc --version" command
+* Verify the installation by `"arm-none-eabi-gcc --version"` command
 * Modify the path of TOOLCAHIN_PREFIX in **dorsalstream/scripts/ARM_EABI_TOOLCHAIN.mk** 
 * Also modify arm-none-eabi-gcc path in **dorsalstream/scripts/Makefile** 
 ```
