@@ -36,6 +36,7 @@ make
 ```
 If you run "make" command, complier starts compiling.  
 When compiling ends, upload binary file on board (example uses M2351 board).  
+  
 Output file comes out here, bin folder.
 ```
 dorsalstream/
