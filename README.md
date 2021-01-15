@@ -34,8 +34,8 @@ dorsalstream/
 cd dorsalstream/applications/helloworldfreertos
 make
 ```
-If you run "make" command, complier starts compiling. 
-When compiling ends, upload binary file on board. (example uses M2351 board)
+If you run "make" command, complier starts compiling.  
+When compiling ends, upload binary file on board (example uses M2351 board).  
 Output file comes out here, bin folder.
 ```
 dorsalstream/
@@ -51,12 +51,12 @@ cd dorsalstream/dist
 ./axtool.exe -t nu_maker -f2 ../applications/helloworld.freertos/bin/Numaker_PFM_M2351/helloworld.freertos.bin <COMnum> 
 # read README and change COMnum to yours like COM1, COM2 etc..
 ```
-With the output command "reset the board", press reset button on board.
-For serial COM connection, use serial communication terminal program like PuTTY. Can download [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+With the output command "reset the board", press reset button on board.  
+For serial COM connection, use serial communication terminal tool like PuTTY. Can download [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
 
 ### Header file include errors:
-If you see errors in including header files, please change the path.
+If you see errors in including header files, please change the path.  
 For example, `#include "at.h" -> "\<path\>/include/at.h"` etc..
 ```
 dorsalstream/
