@@ -75,7 +75,7 @@ dorsalstream/
 After including hear file to main.c, run make.  
 If you see 'Undefined reference to 'function' errors, Add module name to Makefile in application folder.
 > USEMODULE += shell hexdump esp8266 at 
->> # shell and hexdump: default added modules
+>> \# shell and hexdump: default added modules
 ```
 dorsalstream/
   applications/
