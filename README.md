@@ -41,7 +41,8 @@ Output file comes out here, bin folder.
 dorsalstream/
   applications/
     helloworld.freertos/
-      bin
+      board/
+        bin
 ```
 
 * shell 2
@@ -51,6 +52,19 @@ cd dorsalstream/dist
 # read README and change COMnum to yours like COM1, COM2 etc..
 ```
 With the output command "reset the board", press reset button on board and connect to serial.
+
+### Header file include errors
+If you see errors in including header files, please change the path.
+For example, #include "at.h" -> "<path>/include/at.h" etc..
+```
+dorsalstream/
+  drivers/
+    esp8266/
+      include/
+        esp8266.h
+    at/
+      include/
+        at.h
 
 
 
