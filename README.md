@@ -55,8 +55,9 @@ cd dorsalstream/dist
 With the output command "reset the board", press reset button on board.  
 For serial COM connection, use serial communication terminal tool like PuTTY. Can download [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
+## Errors:
 
-### Header file include errors:
+### * Header file include errors:
 If you see errors in including header files, please change the path.  
 For example, `#include "at.h" -> "\<path\>/include/at.h"` etc..
 ```
@@ -70,7 +71,16 @@ dorsalstream/
         at.h
 ```  
 
-
+### * Undefined reference to 'function' errors:
+After including hear file to main.c, run make.  
+If you see 'Undefined reference to 'function' errors, Add module name to Makefile in application folder.
+> USEMODULE += shell hexdump esp8266 at # shell and hexdump: default added modules
+```
+dorsalstream/
+  applications/
+    helloworld.freertos/
+      Makefile
+```
 
 
 #### Special thanks to RIOT
