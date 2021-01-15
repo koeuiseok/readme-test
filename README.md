@@ -9,9 +9,9 @@
 |LCD            |Adnet LCD                          |I2C      |ASM2 Board
 |EEPROM         |AT24CM01, AT24CM02                 |I2C      |         
 |SPI FLASH      |n25q128a13m, mx25l12805d, gd25q128 |SPI      |fatfilesystem, littlefilesystem, mtd
-|KSE(SmartCard) |KSE2.1, KSE2.0                     |ISO7816  |keypair_21, keypair_20
+|KSE(SmartCard) |KSE2.1, KSE2.0                     |ISO7816  |keypair_21, keypair_20  
 
-<br/>
+
 ## Installing and Setup:
 ```
 git clone <repository name>
@@ -26,8 +26,8 @@ dorsalstream/
   scripts/
     Makefile
     ARM_EABI_TOOLCHAIN.mk
-```
-<br/>
+```  
+
 ## Run applications
 * **shell 1**
 ```
@@ -51,9 +51,9 @@ cd dorsalstream/dist
 ./axtool.exe -t nu_maker -f2 ../applications/helloworld.freertos/bin/Numaker_PFM_M2351/helloworld.freertos.bin <COMnum> 
 # read README and change COMnum to yours like COM1, COM2 etc..
 ```
-With the output command "reset the board", press reset button on board and connect to serial.
+With the output command "reset the board", press reset button on board and connect to serial.  
 
-<br/>
+
 ### Header file include errors
 If you see errors in including header files, please change the path.
 For example, #include "at.h" -> "\<path\>/include/at.h" etc..
@@ -66,9 +66,9 @@ dorsalstream/
     at/
       include/
         at.h
-```
+```  
 
 
 
-<br/>
+
 #### Special thanks to RIOT
